@@ -18,21 +18,6 @@ on:
         type: choice
         options:
           - all
-          - s905x3_s905d_s912
-          - a311d
-          - s922x
-          - s922x-n2
-          - s922x-reva
-          - s905x3
-          - s905x2
-          - s905x2-km3
-          - s912
-          - s912-m8s
-          - s905d
-          - s905d-ki
-          - s905x
-          - s905w
-          - s905
           - s905l3a
       openwrt_kernel:
         description: "Select kernel version"
@@ -156,7 +141,7 @@ jobs:
           allowUpdates: true
           token: ${{ secrets.GH_TOKEN }}
           body: |
-            This is OpenWrt firmware for Amlogic s9xxx tv box
+            This is OpenWrt firmware for Amlogic s905l3a tv box
             * Firmware information
             Default IP: 192.168.1.1
             Default username: root
